@@ -10,6 +10,10 @@
   --theme-bg: #272822;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Poppins, Arial;
   color: var(--theme-text);
@@ -77,6 +81,54 @@ nav ul {
 
 nav.reveal {
   transform: translateX(0);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  align-content: center;
+}
+
+button[type=submit] {
+  width: fit-content;
+  background-color: var(--theme-cyan);
+  color: var(--theme-text);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0.7em 1.2em;
+}
+
+fieldset > * {
+  width: 100%;
+}
+
+legend {
+  font-size: 2rem;
+}
+
+input[type=text], input[type=email], textarea {
+  padding: 0.8em;
+  width: 100%;
+  margin-block: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+textarea {
+  min-height: 300px;
 }
 
 #navbar-btn {

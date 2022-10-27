@@ -25,32 +25,26 @@
           <li><a href="./index.html" class="current">Home</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./work.html">Work</a></li>
-          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div id="intro">
-        <div id="animated-logo">
-          <div id="animated-logo-i">
-            <div id="animated-logo-ii">
-              <p id="name">Daniel X</p>
-              <span id="D">D</span>
-              <p id="info">Front-end Dev | Chicago, IL</p>
-            </div>
+      <form netlify>
+        <fieldset>
+          <legend>Want to Chat?</legend>
+          <p>Fill out this form
+          <div>
+            <input name="name" type="text" placeholder="Name"></input>
           </div>
-        </div>
-        <p>
-          I develop and design user experiences to meet their needs and wants.
-        </p>
-      </div>
-      <!--
-      <section id="leetcode">
-        <h2>Leetcode Problems by Difficulty</h2>
-        <svg id="leetcode-graph" viewBox="0 0 600 320" width="600" height="320"></svg>
-      </section>
-      -->
+          <div>
+            <input name="email" type="email" placeholder="Email"></input>
+          </div>
+          <div>
+            <textarea name="message" placeholder="Type your message here"></textarea>
+          </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
     </main>
-    <script src="./index.js" defer></script>
   </body>
 </html>
