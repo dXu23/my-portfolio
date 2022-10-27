@@ -21,6 +21,9 @@ body {
 }
 
 header {
+  position: sticky;
+  background-color: inherit;
+  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -216,6 +219,7 @@ textarea {
     justify-content: start;
     align-items: center;
     column-gap: 10em;
+    opacity: 1;
   }
 
   main {
@@ -227,6 +231,7 @@ textarea {
   nav {
     position: static;
     z-index: 1;
+    opacity: 1;
     align-items: center;
     transform: translateX(0);
     width: auto;
