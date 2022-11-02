@@ -22,12 +22,12 @@ body {
 
 header {
   position: sticky;
-  background-color: inherit;
+  background-color: var(--theme-bg);
   top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 6rem;
+  margin: 0 0 6rem 0;
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
@@ -61,7 +61,7 @@ nav {
   z-index: 100;
   display: flex;
   place-items: center;
-  background-color: var(--theme-bg);
+  background-color: inherit;
   font-size: 1.5rem;
   font-weight: 500;
   opacity: 0.8;
@@ -179,6 +179,10 @@ textarea {
   flex-direction: column;
   margin-block: 1.5em;
   gap: 1.6em;
+}
+
+.project a {
+  text-decoration: none;
 }
 
 .project h3 {
