@@ -24,12 +24,13 @@ body {
 
 header {
   position: sticky;
+  z-index: 9999;
   background-color: #383a3c;
   top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 0 6rem 0;
+  margin: 0 0 6em 0;
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
@@ -92,9 +93,11 @@ nav.reveal {
   transform: translateX(0);
 }
 
+/*
 section {
   margin-bottom: 8em;
 }
+*/
 
 form {
   display: flex;
@@ -146,7 +149,7 @@ textarea {
 
 #navbar-btn {
   border-style: none;
-  background-color: var(--theme-bg);
+  background-color: inherit;
   width: 60px;
   z-index: 1000;
 }
@@ -226,6 +229,11 @@ textarea {
   background-color: var(--theme-cyan);
   color: var(--theme-text);
   border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  margin-block: 5em;
 }
 
 @media screen and (min-width: 600px) {
