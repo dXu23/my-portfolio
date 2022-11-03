@@ -16,13 +16,15 @@
 
 body {
   font-family: Poppins, Arial;
+  margin: 0;
+  padding: 0;
   color: var(--theme-text);
   background-color: var(--theme-bg);
 }
 
 header {
   position: sticky;
-  background-color: var(--theme-bg);
+  background-color: #383a3c;
   top: 0;
   display: flex;
   flex-direction: row;
@@ -30,6 +32,10 @@ header {
   margin: 0 0 6rem 0;
   padding-left: 1.5em;
   padding-right: 1.5em;
+}
+
+header:hover {
+  opacity: 1;
 }
 
 .logo {
@@ -84,6 +90,10 @@ nav ul {
 
 nav.reveal {
   transform: translateX(0);
+}
+
+section {
+  margin-bottom: 8em;
 }
 
 form {
@@ -177,7 +187,7 @@ textarea {
 .project {
   display: flex;
   flex-direction: column;
-  margin-block: 1.5em;
+  margin-block: 3em;
   gap: 1.6em;
 }
 
@@ -223,7 +233,6 @@ textarea {
     justify-content: start;
     align-items: center;
     column-gap: 10em;
-    opacity: 1;
   }
 
   main {
@@ -279,25 +288,37 @@ textarea {
   color: white;
 }
 
+/*
 #navbar a.current {
   color: var(--theme-cyan);
 }
+*/
 
+#navbar a.current::after {
+  content: "";
+  background-color: var(--theme-cyan);
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  width: 100%;
+  height: 8px;
+}
 
 #navbar a:hover {
   color: var(--theme-cyan);
 }
 
-#navbar a::after {
+
+#navbar a:not(.current)::after {
   content: "";
-  background-color: var(--theme-blue);
+  background-color: var(--theme-cyan);
   position: absolute;
   left: 50%;
   bottom: -14px;
   width: 0;
   height: 8px;
   opacity: 0;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 #navbar a:hover::after {
